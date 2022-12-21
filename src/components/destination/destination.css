@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+.destination {
+  background: url(../../assets/destination/background-destination-desktop.jpg)
+    center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+.visual-content {
+  height: 75vh;
+  width: 50vw;
+  /* background-color: red; */
+  margin-left: 5vw;
+  padding-left: 100px;
+}
+.top {
+  font-family: "Barlow Condensed";
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.top span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+.planet-img {
+  width: 50vh;
+  height: 50vh;
+  margin-top: 6rem;
+  margin-left: 4rem;
+}
+.description-container {
+  height: 75vh;
+  width: 45vw;
+  padding-top: 10vh;
+  padding-left: 1rem;
+  /* margin-left: 10vw; */
+  /* background-color: blue; */
+}
+.toggle-buttons {
+  display: flex;
+  gap: 2.25rem;
+}
+.toggle-buttons button {
+  font-size: 1.25rem;
+  border: none;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 200;
+  /* font-size: 28px; */
+  line-height: 1.5rem;
+  /* identical to box height */
+  background: transparent;
+  color: #ffffff;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  /* padding-left: 10px; */
+  position: relative;
+}
+.toggle-buttons button::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  opacity: 0.5;
+  transition: width 250ms ease;
+}
+
+.toggle-buttons button:hover::after {
+  width: 100%;
+}
+button.active::after {
+  width: 100%;
+  opacity: 1;
+}
+.description {
+  width: 85%;
+  height: 60vh;
+  /* background-color: red; */
+  color: white;
+}
+.planet-name {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7rem;
+  padding-top: 2.5rem;
+  /* line-height: 8rem; */
+  /* margin-top: 2rem; */
+  text-transform: uppercase;
+}
+.planet-description {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  max-width: 46ch;
+  font-style: normal;
+  color: #d0d6f9;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+.hor-line {
+  width: 80%;
+  height: 2px;
+  background-color: #383b4b;
+  margin-top: 1.75rem;
+}
+.measurements {
+  display: flex;
+  gap: 5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.measurements p {
+  color: #d0d6f9;
+  font-size: 0.8rem;
+  padding-top: 0.85rem;
+  letter-spacing: 2.36px;
+}
+.measurements h6 {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
