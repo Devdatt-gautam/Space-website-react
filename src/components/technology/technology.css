@@ -1,0 +1,122 @@
+.technology {
+  background: url(../../assets/technology/background-technology-desktop.jpg)
+    no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10vw;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  /* opacity: 0.25%; */
+}
+.left {
+  /* background-color: red; */
+  height: 80vh;
+  width: 45%;
+  margin-left: calc(10vw+100px);
+}
+
+.title {
+  font-family: "Barlow Condensed";
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.25rem;
+  padding-top: 4.25vh;
+  color: #ffffff;
+}
+.title span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.content {
+  width: 100%;
+  height: 85%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 3rem;
+}
+.b-bar {
+  display: flex;
+  height: 80%;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.info-data {
+  width: 90%;
+  height: 100%;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.info-data h4 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  letter-spacing: 2.7px;
+
+  color: #d0d6f9;
+}
+.tech-name {
+  font-family: "Bellefair";
+  font-style: normal;
+  color: white;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-block: 1rem;
+}
+.infos p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  /* or 178% */
+
+  color: #d0d6f9;
+}
+button {
+  width: 5rem;
+  height: 5rem;
+  border: 1.5px rgba(255, 255, 255, 0.25) solid;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  transition: all 250ms ease;
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 2rem;
+}
+button:hover {
+  border-color: white;
+}
+button:focus,
+button:active,
+.open {
+  background-color: white;
+  color: black;
+}
+
+.right {
+  width: 33vw;
+  height: 80vh;
+  /* background-color: green; */
+  display: grid;
+  place-items: center;
+}
+.image {
+  max-width: 100%;
+}

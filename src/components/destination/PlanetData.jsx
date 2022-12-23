@@ -3,7 +3,6 @@ import "./destination.css";
 const PlanetData = (props) => {
   return (
     <>
-      {" "}
       {props.value === "01" ? (
         <div className="planet-data">
           <h1 className="planet-name">moon</h1>

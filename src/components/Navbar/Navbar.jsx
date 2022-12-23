@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/shared/logo.svg";
 import line from "../../assets/home/Rectangle.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar-container">
@@ -15,24 +15,36 @@ const Navbar = () => {
       <nav className="navbar">
         <ul>
           <li>
-            <Link to="/" tabindex="1">
-              <span aria-hidden="true">01</span> home
-            </Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+              to="/"
+            >
+              <span aria-hidden="true">00</span> home
+            </NavLink>
           </li>
           <li>
-            <Link to="/destination" tabindex="1">
-              <span aria-hidden="true">02</span> destination
-            </Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+              to="/destination"
+            >
+              <span aria-hidden="true">01</span> destination
+            </NavLink>
           </li>
           <li>
-            <Link to="/crew" tabindex="1">
-              <span aria-hidden="true">03</span> crew
-            </Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+              to="/crew"
+            >
+              <span aria-hidden="true">02</span> crew
+            </NavLink>
           </li>
           <li>
-            <Link to="/technology" tabindex="1">
-              <span aria-hidden="true">04</span> technology
-            </Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+              to="/technology"
+            >
+              <span aria-hidden="true">03</span> technology
+            </NavLink>
           </li>
         </ul>
       </nav>

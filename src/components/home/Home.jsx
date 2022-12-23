@@ -14,7 +14,7 @@ const Home = () => {
             world experience!
           </p>
         </div>
-        <div className="button" tabindex="2">
+        <div className="button">
           <button>explore</button>
         </div>
       </section>

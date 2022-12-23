@@ -14,9 +14,9 @@ const Planet = (props) => {
   return (
     <div>
       <h3 className="top">
-        <span> {props.value}</span> pick your destination
+        <span> 01</span> pick your destination
       </h3>
-      <img className="planet-img" src={handler()} alt="moon" />
+      <img className="planet-img" src={handler()} alt="planet" />
     </div>
   );
 };

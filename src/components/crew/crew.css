@@ -1,0 +1,92 @@
+.crew {
+  background: url(../../assets/crew/background-crew-desktop.jpg) no-repeat
+    center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-family: "Bellefair";
+  text-transform: uppercase;
+  /* justify-content: space-around; */
+}
+.first {
+  height: 80vh;
+  /* background-color: red; */
+  width: 40%;
+  margin-left: calc(10vh + 100px);
+}
+.heading {
+  font-family: "Barlow Condensed";
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.25rem;
+  padding-top: 4.25vh;
+  color: #ffffff;
+}
+.heading span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+.role {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 5vh;
+  margin-top: 15vh;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 10vh;
+}
+.more {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 5vh;
+  color: #d0d6f9;
+  text-transform: none;
+  /* max-width: 48ch; */
+}
+.slider {
+  /* margin-top: 5rem; */
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  position: absolute;
+  bottom: 10vh;
+}
+.btn {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.17;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.actively {
+  opacity: 1;
+  background-color: white;
+}
+
+.second {
+  width: 45%;
+  /* background-color: pink; */
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+.crew-image {
+  max-height: 100%;
+  /* max-width: 100%; */
+}
