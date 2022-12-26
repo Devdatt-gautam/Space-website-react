@@ -9,8 +9,8 @@ const Navbar = () => {
   const navSwitch = () => {
     let t = document.querySelector(".navbar");
     t.style.transform === "translateX(100%)"
-      ? (t.style.transform = "translateX(0%)")
-      : (t.style.transform = "translateX(100%)");
+      ? (t.style.transform = "translateX(0%)")((t.style.display = "block"))
+      : (t.style.transform = "translateX(100%)")((t.style.display = "none"));
   };
   return (
     <div className="navbar-container">
