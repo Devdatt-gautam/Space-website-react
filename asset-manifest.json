@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Space-website-react/static/css/main.b921d42b.css",
+    "main.css": "/Space-website-react/static/css/main.131dae54.css",
     "main.js": "/Space-website-react/static/js/main.134fd1be.js",
     "static/media/image-victor-glover.png": "/Space-website-react/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/Space-website-react/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
@@ -30,11 +30,11 @@
     "static/media/hamburger.svg": "/Space-website-react/static/media/hamburger.dd0640080552bccf4d9968e067bddb33.svg",
     "static/media/icon-close.svg": "/Space-website-react/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/Rectangle.svg": "/Space-website-react/static/media/Rectangle.d85ebbc1ca676e55220622b47e5c5562.svg",
-    "main.b921d42b.css.map": "/Space-website-react/static/css/main.b921d42b.css.map",
+    "main.131dae54.css.map": "/Space-website-react/static/css/main.131dae54.css.map",
     "main.134fd1be.js.map": "/Space-website-react/static/js/main.134fd1be.js.map"
   },
   "entrypoints": [
-    "static/css/main.b921d42b.css",
+    "static/css/main.131dae54.css",
     "static/js/main.134fd1be.js"
   ]
 }
