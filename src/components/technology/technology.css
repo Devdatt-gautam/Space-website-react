@@ -17,7 +17,6 @@
   /* background-color: red; */
   height: 80vh;
   width: 48%;
-  margin-left: calc(10vw+100px);
 }
 
 .title {
@@ -140,6 +139,7 @@
   .left {
     width: 100%;
     height: fit-content;
+    margin-left: 0;
   }
   .right {
     width: 100%;
