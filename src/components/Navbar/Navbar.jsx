@@ -2,10 +2,23 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/shared/logo.svg";
 import line from "../../assets/home/Rectangle.svg";
+import close from "../../assets/shared/icon-close.svg";
+import hamburger from "../../assets/shared/hamburger.svg";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+  const navSwitch = () => {
+    let t = document.querySelector(".navbar");
+    t.style.transform === "translateX(100%)"
+      ? (t.style.transform = "translateX(0%)")
+      : (t.style.transform = "translateX(100%)");
+  };
   return (
     <div className="navbar-container">
+      <div className="hamburger">
+        <button onClick={navSwitch}>
+          <img src={hamburger} alt="hamburger" />
+        </button>
+      </div>
       <div className="logo">
         <img src={logo} alt="space site logo" />
       </div>
@@ -13,6 +26,9 @@ const Navbar = () => {
         <img src={line} alt="horizontal line" aria-hidden="true" />
       </div>
       <nav className="navbar">
+        <button onClick={navSwitch} className="icon-close">
+          <img src={close} alt="close" />
+        </button>
         <ul>
           <li>
             <NavLink

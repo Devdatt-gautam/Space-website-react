@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import lv from "../../assets/technology/image-launch-vehicle-portrait.jpg";
+import lv2 from "../../assets/technology/image-launch-vehicle-landscape.jpg";
 import sp from "../../assets/technology/image-spaceport-portrait.jpg";
+import sp2 from "../../assets/technology/image-spaceport-landscape.jpg";
 import sc from "../../assets/technology/image-space-capsule-portrait.jpg";
+import sc2 from "../../assets/technology/image-space-capsule-landscape.jpg";
 import "./technology.css";
+
 const Technology = () => {
-  const [num, setNum] = useState(1);
+  const [num, setNum] = useState("1");
   const clicker = (e) => {
     setNum(e.target.value);
   };
@@ -13,12 +17,17 @@ const Technology = () => {
     else if (num === "2") return sp;
     else return lv;
   };
+  const evaluate2 = () => {
+    if (num === "3") return sc2;
+    else if (num === "2") return sp2;
+    else return lv2;
+  };
   return (
     <div className="technology">
+      <h1 className="title">
+        <span>03 </span>space launch 101
+      </h1>
       <div className="left">
-        <h1 className="title">
-          <span>03 </span>space launch 101
-        </h1>
         <div className="content">
           <div className="b-bar">
             <button
@@ -86,7 +95,11 @@ const Technology = () => {
         </div>
       </div>
       <div className="right">
-        <img className="image" src={evaluate()} alt="vehicle" />
+        <picture className="image">
+          <source media="(max-width:1330px)" srcSet={evaluate2()} />
+
+          <img src={evaluate()} alt="vehicle" />
+        </picture>
       </div>
     </div>
   );

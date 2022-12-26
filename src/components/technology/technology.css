@@ -4,6 +4,7 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -15,7 +16,7 @@
 .left {
   /* background-color: red; */
   height: 80vh;
-  width: 45%;
+  width: 48%;
   margin-left: calc(10vw+100px);
 }
 
@@ -25,9 +26,13 @@
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.25rem;
-  padding-top: 4.25vh;
+  /* padding-top: 4.25vh; */
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
   color: #ffffff;
 }
+
 .title span {
   font-weight: 700;
   opacity: 0.25;
@@ -88,7 +93,7 @@
 
   color: #d0d6f9;
 }
-button {
+.b-bar > button {
   width: 5rem;
   height: 5rem;
   border: 1.5px rgba(255, 255, 255, 0.25) solid;
@@ -100,12 +105,14 @@ button {
   font-weight: 400;
   font-size: 2rem;
 }
-button:hover {
+.b-bar > button:hover {
   border-color: white;
 }
-button:focus,
-button:active,
-.open {
+.b-bar > button:focus {
+  background-color: white;
+  color: black;
+}
+.b-bar .open {
   background-color: white;
   color: black;
 }
@@ -116,7 +123,50 @@ button:active,
   /* background-color: green; */
   display: grid;
   place-items: center;
+  color: white;
 }
 .image {
-  max-width: 100%;
+  width: 33vw;
+}
+
+@media only screen and (max-width: 1330px) {
+  .technology {
+    padding-top: 25vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+  }
+  .left {
+    width: 100%;
+    height: fit-content;
+  }
+  .right {
+    width: 100%;
+    height: fit-content;
+  }
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .b-bar {
+    flex-direction: row;
+  }
+  .infos p {
+    width: 75%;
+    margin-inline: auto;
+  }
+  .image {
+    width: 100vw;
+    height: fit-content;
+  }
+  .image > img {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .infos p {
+    font-size: 1.25rem;
+    width: 95%;
+  }
 }

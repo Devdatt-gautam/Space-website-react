@@ -26,6 +26,7 @@ const Crew = () => {
         <h1 className="heading">
           <span>02 </span>meet your crew
         </h1>
+
         <div className="about">
           {member === "01" ? (
             <div className="data">
@@ -72,28 +73,28 @@ const Crew = () => {
             </div>
           )}
         </div>
-        <div className="slider">
-          <button
-            onClick={updater}
-            className={"btn " + (member === "01" ? "actively" : "inactively")}
-            value="01"
-          ></button>
-          <button
-            onClick={updater}
-            className={"btn " + (member === "02" ? "actively" : "inactively")}
-            value="02"
-          ></button>
-          <button
-            onClick={updater}
-            className={"btn " + (member === "03" ? "actively" : "inactively")}
-            value="03"
-          ></button>
-          <button
-            onClick={updater}
-            className={"btn " + (member === "04" ? "actively" : "inactively")}
-            value="04"
-          ></button>
-        </div>
+      </div>
+      <div className="slider">
+        <button
+          onClick={updater}
+          className={"btn " + (member === "01" ? "actively" : "inactively")}
+          value="01"
+        ></button>
+        <button
+          onClick={updater}
+          className={"btn " + (member === "02" ? "actively" : "inactively")}
+          value="02"
+        ></button>
+        <button
+          onClick={updater}
+          className={"btn " + (member === "03" ? "actively" : "inactively")}
+          value="03"
+        ></button>
+        <button
+          onClick={updater}
+          className={"btn " + (member === "04" ? "actively" : "inactively")}
+          value="04"
+        ></button>
       </div>
       <div className="second">
         <img className="crew-image" src={handler()} alt="crew" />
