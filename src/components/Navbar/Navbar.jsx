@@ -36,7 +36,6 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/"
-              onClick={navSwitch}
             >
               <span aria-hidden="true">00</span> home
             </NavLink>
@@ -45,7 +44,6 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/destination"
-              onClick={navSwitch}
             >
               <span aria-hidden="true">01</span> destination
             </NavLink>
@@ -54,7 +52,6 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/crew"
-              onClick={navSwitch}
             >
               <span aria-hidden="true">02</span> crew
             </NavLink>
@@ -63,7 +60,6 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/technology"
-              onClick={navSwitch}
             >
               <span aria-hidden="true">03</span> technology
             </NavLink>
