@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./home.css";
 const Home = () => {
   return (
@@ -14,9 +15,11 @@ const Home = () => {
             world experience!
           </p>
         </div>
-        <div className="button">
-          <button>explore</button>
-        </div>
+        <NavLink to="/destination">
+          <div className="button">
+            <button>explore</button>
+          </div>
+        </NavLink>
       </section>
     </div>
   );
