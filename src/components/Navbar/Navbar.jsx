@@ -12,6 +12,14 @@ const Navbar = () => {
       ? (t.style.transform = "translateX(0%)")((t.style.display = "block"))
       : (t.style.transform = "translateX(100%)")((t.style.display = "none"));
   };
+  const navSwitch2 = () => {
+    let t = document.querySelector(".navbar");
+    let h = document.querySelector("hamburger");
+    if (t.style.transform === "translateX(0%)" && h.style.display === "block") {
+      t.style.transform = "translateX(100%)";
+      t.style.display = "none";
+    }
+  };
   return (
     <div className="navbar-container">
       <div className="hamburger">
@@ -36,6 +44,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/"
+              onClick={navSwitch2}
             >
               <span aria-hidden="true">00</span> home
             </NavLink>
@@ -44,6 +53,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/destination"
+              onClick={navSwitch2}
             >
               <span aria-hidden="true">01</span> destination
             </NavLink>
@@ -52,6 +62,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/crew"
+              onClick={navSwitch2}
             >
               <span aria-hidden="true">02</span> crew
             </NavLink>
@@ -60,6 +71,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/technology"
+              onClick={navSwitch2}
             >
               <span aria-hidden="true">03</span> technology
             </NavLink>
