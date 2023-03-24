@@ -123,13 +123,18 @@
     transform: translateX(100%);
     transition: all 250ms ease;
   }
+  .translated {
+    transform: translateX(100%);
+  }
+  .non-translated {
+    transform: translateX(0%);
+  }
   .hamburger {
     width: 28px;
     height: 24px;
     display: block;
-    /* background-color: transparent; */
     position: absolute;
-    top: 5vh;
+    top: 3vh;
     right: 5vw;
   }
   .hamburger button {
@@ -161,7 +166,7 @@
     position: absolute;
     right: 5vw;
     z-index: 10000;
-    top: 5vh;
+    top: 3vh;
     background: none;
     border: none;
     -webkit-backface-visibility: hidden;

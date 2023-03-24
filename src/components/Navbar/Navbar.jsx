@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/shared/logo.svg";
 import line from "../../assets/home/Rectangle.svg";
@@ -7,12 +7,12 @@ import hamburger from "../../assets/shared/bars-solid.svg";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navSwitch = () => {
-    let t = document.querySelector(".navbar");
-    t.style.transform === "translateX(100%)"
-      ? (t.style.transform = "translateX(0%)")((t.style.display = "block"))
-      : (t.style.transform = "translateX(100%)")((t.style.display = "none"));
+    styles === "translated"
+      ? setStyles("non-translated")
+      : setStyles("translated");
   };
 
+  const [styles, setStyles] = useState("translated");
   return (
     <div className="navbar-container">
       <div className="hamburger">
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="h-line">
         <img src={line} alt="horizontal line" aria-hidden="true" />
       </div>
-      <nav className="navbar">
+      <nav className={`navbar ${styles}`}>
         <button onClick={navSwitch} className="icon-close">
           <img src={close} alt="close" width="100%" />
         </button>
@@ -37,6 +37,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/"
+              onClick={navSwitch}
             >
               <span aria-hidden="true">00</span> home
             </NavLink>
@@ -45,6 +46,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/destination"
+              onClick={navSwitch}
             >
               <span aria-hidden="true">01</span> destination
             </NavLink>
@@ -53,6 +55,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/crew"
+              onClick={navSwitch}
             >
               <span aria-hidden="true">02</span> crew
             </NavLink>
@@ -61,6 +64,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "inactive")}
               to="/technology"
+              onClick={navSwitch}
             >
               <span aria-hidden="true">03</span> technology
             </NavLink>
