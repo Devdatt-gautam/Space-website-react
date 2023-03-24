@@ -29,7 +29,7 @@ const Crew = () => {
       } else if (member === "03") {
         setMember("04");
       } else setMember("01");
-    }, 8000);
+    }, 10000);
     return () => clearTimeout(timer);
   }, [member]);
 

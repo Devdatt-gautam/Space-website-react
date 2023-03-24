@@ -17,7 +17,7 @@ const Destination = () => {
       } else if (toggleKey === "03") {
         setToggleKey("04");
       } else setToggleKey("01");
-    }, 8000);
+    }, 10000);
     return () => clearTimeout(timer);
   }, [toggleKey]);
   return (

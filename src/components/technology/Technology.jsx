@@ -19,7 +19,7 @@ const Technology = () => {
       } else if (num === "2") {
         setNum("3");
       } else setNum("1");
-    }, 8000);
+    }, 10000);
     return () => clearTimeout(timer);
   }, [num]);
   const evaluate = () => {
