@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./destination.css";
 import Planet from "./Planet";
 import PlanetData from "./PlanetData";
@@ -8,6 +8,18 @@ const Destination = () => {
   const handle = (e) => {
     setToggleKey(e.target.value);
   };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (toggleKey === "01") {
+        setToggleKey("02");
+      } else if (toggleKey === "02") {
+        setToggleKey("03");
+      } else if (toggleKey === "03") {
+        setToggleKey("04");
+      } else setToggleKey("01");
+    }, 8000);
+    return () => clearTimeout(timer);
+  }, [toggleKey]);
   return (
     <div className="destination">
       <div className="visual-content">

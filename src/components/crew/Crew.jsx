@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./crew.css";
 import douglas from "../../assets/crew/image-douglas-hurley.png";
 import mark from "../../assets/crew/image-mark-shuttleworth.png";
@@ -19,6 +19,19 @@ const Crew = () => {
     setMember(e.target.value.toString());
     // console.log(member);
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (member === "01") {
+        setMember("02");
+      } else if (member === "02") {
+        setMember("03");
+      } else if (member === "03") {
+        setMember("04");
+      } else setMember("01");
+    }, 8000);
+    return () => clearTimeout(timer);
+  }, [member]);
 
   return (
     <div className="crew">

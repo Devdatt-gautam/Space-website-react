@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import lv from "../../assets/technology/image-launch-vehicle-portrait.jpg";
 import lv2 from "../../assets/technology/image-launch-vehicle-landscape.jpg";
 import sp from "../../assets/technology/image-spaceport-portrait.jpg";
@@ -12,6 +12,16 @@ const Technology = () => {
   const clicker = (e) => {
     setNum(e.target.value);
   };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (num === "1") {
+        setNum("2");
+      } else if (num === "2") {
+        setNum("3");
+      } else setNum("1");
+    }, 8000);
+    return () => clearTimeout(timer);
+  }, [num]);
   const evaluate = () => {
     if (num === "3") return sc;
     else if (num === "2") return sp;
