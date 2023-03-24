@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Space-website-react/static/css/main.8f9f6f83.css",
-    "main.js": "/Space-website-react/static/js/main.2cef1a7d.js",
+    "main.css": "/Space-website-react/static/css/main.a47d8f39.css",
+    "main.js": "/Space-website-react/static/js/main.98b7daaf.js",
     "static/media/image-victor-glover.png": "/Space-website-react/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/Space-website-react/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
     "static/media/image-mark-shuttleworth.png": "/Space-website-react/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
@@ -30,11 +30,11 @@
     "static/media/logo.svg": "/Space-website-react/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/Space-website-react/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/Rectangle.svg": "/Space-website-react/static/media/Rectangle.d85ebbc1ca676e55220622b47e5c5562.svg",
-    "main.8f9f6f83.css.map": "/Space-website-react/static/css/main.8f9f6f83.css.map",
-    "main.2cef1a7d.js.map": "/Space-website-react/static/js/main.2cef1a7d.js.map"
+    "main.a47d8f39.css.map": "/Space-website-react/static/css/main.a47d8f39.css.map",
+    "main.98b7daaf.js.map": "/Space-website-react/static/js/main.98b7daaf.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f9f6f83.css",
-    "static/js/main.2cef1a7d.js"
+    "static/css/main.a47d8f39.css",
+    "static/js/main.98b7daaf.js"
   ]
 }
